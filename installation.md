@@ -45,6 +45,9 @@ cd /opt/kolla/ && sudo git clone https://github.com/openstack/kolla-ansible.git
 ```
 
 ```
+sudo git clone --branch master https://opendev.org/openstack/kolla-ansible
+```
+```
 cp -r /opt/kolla/kolla-ansible/etc/kolla/* /etc/kolla/
 cp -r /opt/kolla/kolla-ansible/ansible/inventory/* /etc/kolla/
 ```
