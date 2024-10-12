@@ -84,12 +84,15 @@ ansible-galaxy collection install ansible.netcommon
 sudo cp -r ~/.ansible/collections/ansible_collections/community/general /opt/kolla/kolla-ansible/ansible/roles/
 ```
 
+```
+kolla-ansible -i inventory/multinode bootstrap-servers
+```
 
 ```
-kolla-ansible prechecks -i multinode
+kolla-ansible prechecks -i inventory/multinode
 ```
 
 ```
-kolla-ansible deploy -i <path/to/multinode/inventory/file>
+kolla-ansible deploy -i inventory/multinode
 ```
 
